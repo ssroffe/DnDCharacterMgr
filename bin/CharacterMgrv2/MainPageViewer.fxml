@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="875.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="875.0" prefViewportHeight="840.0" prefViewportWidth="840.0" prefWidth="875.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <BorderPane layoutY="54.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="724.0" prefWidth="183.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="60.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Label text="Inspiration">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="inspirationTf" prefHeight="27.0" prefWidth="95.0" />
+                        <Label text="Proficiency">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="proficiencyTf" prefHeight="27.0" prefWidth="95.0" />
+                        <Label text="Strength">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="strTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="strModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Constitution">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="consTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="consModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Dexterity">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="dexTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="dexModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Intelligence">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="intTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="intModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Wisdom">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="wisTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="wisModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Charisma">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="140.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="charTf" prefHeight="27.0" prefWidth="58.0" />
+                              <Label fx:id="charModLbl" text="mod">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Dicer Roller" underline="true">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="31.0" prefWidth="173.0" spacing="10.0">
+                           <children>
+                              <Spinner fx:id="rollerSp" editable="true" prefHeight="31.0" prefWidth="82.0" />
+                              <ComboBox fx:id="rollerCb" prefHeight="31.0" prefWidth="96.0" value="d20">
+                              	<items>
+                              		<FXCollections fx:factory="observableArrayList">
+		                                 <String fx:value="d4" />
+		                                 <String fx:value="d6" />
+		                                 <String fx:value="d8" />
+		                                 <String fx:value="d10" />
+		                                 <String fx:value="d%" />
+		                                 <String fx:value="d12" />
+		                                 <String fx:value="d20" />
+		                                 <String fx:value="d100" />
+                              		</FXCollections>
+                           		</items>
+                           	</ComboBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="rollerBtn" mnemonicParsing="false" onAction="#handleRollerBtn" text="Roll" />
+                        <Label fx:id="rollerLbl" text="Roll" visible="false">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+               </left>
+               <right>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="209.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="60.0" left="10.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="172.0" spacing="10.0">
+                           <children>
+                              <Label text="CP:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="cpTf" prefHeight="24.0" prefWidth="56.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="172.0" spacing="10.0">
+                           <children>
+                              <Label text="SP:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="spTf" prefHeight="24.0" prefWidth="56.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="172.0" spacing="10.0">
+                           <children>
+                              <Label text="EP:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="epTf" prefHeight="24.0" prefWidth="56.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="172.0" spacing="10.0">
+                           <children>
+                              <Label text="GP:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="gpTf" prefHeight="24.0" prefWidth="56.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="172.0" spacing="10.0">
+                           <children>
+                              <Label text="PP:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="ppTf" prefHeight="24.0" prefWidth="56.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="46.0" prefWidth="195.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="addSpendTf" alignment="CENTER" prefHeight="32.0" prefWidth="97.0" promptText="Add/Spend">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <ComboBox fx:id="currencyCb" prefHeight="32.0" prefWidth="84.0">
+                              	<items>
+                              		<FXCollections fx:factory="observableArrayList">
+                              			<String fx:value="CP" />
+                              			<String fx:value="SP" />
+                              			<String fx:value="EP" />
+                              			<String fx:value="GP" />
+                              			<String fx:value="PP" />
+                              		</FXCollections>
+                              	</items>
+                              	</ComboBox>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="39.0" prefWidth="182.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="addCurrencyBtn" mnemonicParsing="false" onAction="#handleAddCurr" prefHeight="28.0" prefWidth="81.0" text="Add" />
+                              <Button fx:id="loseCurrencyBtn" mnemonicParsing="false" onAction="#handleSpendCurr" prefHeight="28.0" prefWidth="81.0" text="Spend" />
+                           </children>
+                        </HBox>
+                        <HBox fillHeight="false" prefHeight="42.0" prefWidth="175.0" spacing="10.0">
+                           <children>
+                              <Label text="Classes:" underline="true">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Button fx:id="addClassBtn" mnemonicParsing="false" onAction="#handleAddClassBtn" prefHeight="25.0" prefWidth="48.0" text="+">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Button>
+                              <Button fx:id="addClassBtn1" mnemonicParsing="false" onAction="#handleRemoveClassesBtn" prefHeight="25.0" prefWidth="48.0" text="-">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                        <VBox fx:id="rightVb" alignment="TOP_CENTER" prefWidth="209.0" spacing="10.0" />
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <GridPane alignment="CENTER_LEFT" hgap="10.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="88.0" />
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="348.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="365.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="570.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="570.0" minHeight="10.0" prefHeight="166.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <children>
+                        <Label text="Experience:" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Race:" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Subrace:" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Background:" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Max HP:" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Current HP:" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Temp HP:" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="321.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <children>
+                              <Label text="Armor:">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="acTf" prefHeight="27.0" prefWidth="47.0" />
+                              <Label text="Initiative:">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="initTf" prefHeight="27.0" prefWidth="47.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="287.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <children>
+                              <Label text="Speed:">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="speedTf" prefHeight="27.0" prefWidth="47.0" />
+                           </children>
+                        </HBox>
+                        <ComboBox fx:id="alignmentCb" editable="true" prefHeight="28.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Lawful Good" />
+                                 <String fx:value="Lawful Neutral" />
+                                 <String fx:value="Lawful Evil" />
+                                 <String fx:value="Neutral Good" />
+                                 <String fx:value="True Neutral" />
+                                 <String fx:value="Neutral Evil" />
+                                 <String fx:value="Chaotic Good" />
+                                 <String fx:value="Chaotic Neutral" />
+                                 <String fx:value="Chaotic Evil" />
+                              </FXCollections>
+                           </items>
+                        </ComboBox>
+                        <TextField fx:id="expTf" prefHeight="27.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ComboBox fx:id="raceCb" editable="true" prefHeight="28.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <items>
+                              		<FXCollections fx:factory="observableArrayList">
+                              			<String fx:value="Dragonborn" />
+                              			<String fx:value="Dwarf" />
+                              			<String fx:value="Elf" />
+                              			<String fx:value="Gnome" />
+                              			<String fx:value="Half-Elf" />
+                              			<String fx:value="Half-Orc" />
+                              			<String fx:value="Halfling" />
+                              			<String fx:value="Human" />
+                              			<String fx:value="Tiefling" />
+                              		</FXCollections>
+                           </items>
+                     	</ComboBox>
+                        <ComboBox fx:id="subRaceCb" editable="true" prefHeight="28.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <ComboBox fx:id="backgroundCb" editable="true" prefHeight="28.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <items>
+                              		<FXCollections fx:factory="observableArrayList">
+                              			<String fx:value="Acolyte" />
+                              			<String fx:value="Charlatan" />
+                              			<String fx:value="Criminal" />
+                              			<String fx:value="Entertainer" />
+                              			<String fx:value="Folk Hero" />
+                              			<String fx:value="Guild Artisan" />
+                              			<String fx:value="Hermit" />
+                              			<String fx:value="Noble" />
+                              			<String fx:value="Outlander" />
+                              			<String fx:value="Sage" />
+                              			<String fx:value="Sailor" />
+                              			<String fx:value="Soldier" />
+                              			<String fx:value="Urchin" />
+                              		</FXCollections>
+                           </items>
+                        </ComboBox>
+                        <TextField fx:id="maxHPTf" prefHeight="27.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="currHPTf" prefHeight="27.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="354.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <children>
+                              <TextField fx:id="addSubHPTf" prefHeight="31.0" prefWidth="109.0" promptText="Add/Lose HP" />
+                              <Button fx:id="addHPBtn" mnemonicParsing="false" onAction="#handleAddHP" prefHeight="26.0" prefWidth="68.0" text="Add" />
+                              <Button fx:id="loseHPBtn" mnemonicParsing="false" onAction="#handleSubHP" prefHeight="26.0" prefWidth="68.0" text="Lose" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="refillHPBtn" mnemonicParsing="false" onAction="#handleRefillBtn" prefHeight="26.0" prefWidth="100.0" text="Refill HP" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <TextField fx:id="tempHPTf" prefHeight="27.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <Label text="Alignment:" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label text="Level:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalLvlLbl" text="lvl" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="188.0" prefWidth="357.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="299.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="skillsBtn" mnemonicParsing="false" onAction="#handleSkillsBtn" prefHeight="31.0" prefWidth="71.0" text="Skills" />
+                                    <Button mnemonicParsing="false" onAction="#handleSpellsBtn" prefHeight="31.0" prefWidth="79.0" text="Spells" />
+                                    <Button mnemonicParsing="false" onAction="#handleWeaponsBtn" prefHeight="31.0" prefWidth="86.0" text="Weapons" />
+                                    <Button mnemonicParsing="false" onAction="#handleInventoryBtn" prefHeight="31.0" prefWidth="93.0" text="Inventory" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="0.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#handleLanguagesBtn" text="Languages" />
+                                    <Button mnemonicParsing="false" onAction="#handleFeaturesBtn" text="Features" />
+                                    <Button mnemonicParsing="false" onAction="#handlePersonalityBtn" prefHeight="31.0" prefWidth="99.0" text="Personality" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="299.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#handleSavingThrowsBtn" text="Saving Throws" />
+                                    <Button mnemonicParsing="false" onAction="#handleDescriptionBtn" text="Desc." />
+                                    <Button mnemonicParsing="false" onAction="#handleNotesBtn" text="Notes" />
+                                    <Button mnemonicParsing="false" onAction="#handleResourcesBtn" prefHeight="31.0" prefWidth="88.0" text="Resources" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label text="Death Saves:" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="63.0" prefWidth="288.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="288.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Successes:" />
+                                    <CheckBox fx:id="deathRollSuccessBox1" mnemonicParsing="false" />
+                                    <CheckBox fx:id="deathRollSuccessBox2" mnemonicParsing="false" />
+                                    <CheckBox fx:id="deathRollSuccessBox3" mnemonicParsing="false" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="288.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Failures:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <CheckBox fx:id="deathRollFailBox1" mnemonicParsing="false" />
+                                    <CheckBox fx:id="deathRollFailBox2" mnemonicParsing="false" />
+                                    <CheckBox fx:id="deathRollFailBox3" mnemonicParsing="false" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </center>
+               <top>
+                  <GridPane alignment="CENTER" prefHeight="54.0" prefWidth="836.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="nameTf" alignment="CENTER" editable="false" onMouseClicked="#nameClick" prefHeight="54.0" prefWidth="506.0" promptText="Character Name" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </top>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="798.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="savedLbl" text="Character Saved!" textFill="RED" visible="false">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleSaveBtn" prefHeight="31.0" prefWidth="73.0" text="Save" />
+                        <Button fx:id="saveAsBtn" mnemonicParsing="false" onAction="#handleSaveAsBtn" text="Save As..." />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

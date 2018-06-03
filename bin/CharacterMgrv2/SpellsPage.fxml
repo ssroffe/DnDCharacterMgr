@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Spells" underline="true">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label text="Spell Attack:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="spellAttackTf" prefHeight="31.0" prefWidth="71.0" />
+                        <Label text="Spell Save DC:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="spellSaveTf" prefHeight="31.0" prefWidth="71.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox spacing="10.0">
+                     <children>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Cantrips" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells0Cb" prefWidth="150.0" promptText="Add Cantrip..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell0Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells0Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 1 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells1Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell1Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss1" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells1Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 2 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells2Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell2Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss2" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells2Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 3 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells3Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell3Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss3" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells3Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 4 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells4Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell4Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss4" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells4Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 5 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells5Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell5Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss5" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells5Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 6 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells6Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell6Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss6" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells6Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 7 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells7Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell7Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss7" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells7Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 8 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells8Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell8Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss8" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells8Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Label text="Level 9 Spells" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="spells9Cb" prefWidth="150.0" promptText="Add Spell..." />
+                              <Button mnemonicParsing="false" onAction="#handleAddSpell9Btn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Label text="Spell Slots:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Spinner fx:id="ss9" prefHeight="31.0" prefWidth="85.0" />
+                           </children>
+                        </HBox>
+                        <ScrollPane>
+                           <content>
+                              <GridPane fx:id="spells9Gp" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ScrollPane>
+         </center>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <bottom>
+            <VBox spacing="10.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <ComboBox fx:id="allSpellsCb" prefWidth="150.0" promptText="All Spells..." />
+                        <Button mnemonicParsing="false" onAction="#handleAddSpellAllBtn" prefHeight="31.0" prefWidth="67.0" text="Add" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#handleAddCustomSpell" text="Add Custom Spell" />
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleDoneBtn" prefHeight="31.0" prefWidth="66.0" text="Done" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
